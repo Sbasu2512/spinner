@@ -1,5 +1,4 @@
 //process.stdout.write('hello from spinner1.js... \rheyyy\n');
-
 const spin = () => {
        
        for(let i=0; i<10; i++){
