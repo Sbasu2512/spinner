@@ -20,7 +20,6 @@ const spin = () => {
                    }, 700);
               
                    setTimeout(() => {
-                     // Need to escape the backslash since it's a special character.
                      process.stdout.write('\r\|   '); 
                    }, 900);
               
@@ -30,9 +29,12 @@ const spin = () => {
                    }, 1100);
                    
                    setTimeout(() => {
-                     // Need to escape the backslash since it's a special character.
                      process.stdout.write('\r\-   '); 
                    }, 1400);   
+
+                   setTimeout(() => {
+                     process.stdout.write('\r\\   '); 
+                   }, 1600);   
        }
 }
 
